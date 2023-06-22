@@ -145,25 +145,26 @@
     
 }
 
+.footer-logo {}
+
+.logo-style {}
+
 .footer-text {
     max-width: 264px;
 }
 
-.footer-logo {
-
-}
-
-.logo-style {
-    
-}
-
 .footer-container {
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
 }
 
 .footer-left-container {
+    align-items: start;
     margin-right: 24px;
+}
+
+.footer-right-container {
+    align-items: start;
 }
 
 .footer-title {
@@ -192,7 +193,8 @@
 }
 
 .footer-form {
-    margin-left: 80px;
+    display: flex;
+    
 }
 
 .footer-form-text {
@@ -208,6 +210,7 @@
 
 .subscribe-form {
     display: flex;
+    align-items: start;
     gap: 24px;
 }
 
