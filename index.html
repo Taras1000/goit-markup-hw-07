@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles1.css" />
+    <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 768px)" />
+    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 1200px)" />
 
 </head>
 
@@ -185,12 +187,15 @@
 
         <section class="project">
             <div class="container">
-                <h2 class="project-title">What are we doing</h2>
+                <h2 class="section-title">What are we doing</h2>
                 <ul class="project-list list">
-                    <li class="project-item"><img src="./images/img1.jpg" alt="desktop" width="360" height="300"></li>
-                    <li class="project-item"><img src="./images/img2.jpg" alt="phonescreen" width="360" height="300">
+                    <li class="project-item"><img srcset="./images/img1-2x.jpg 2x" src="./images/img1.jpg" alt="desktop"
+                            width="360" height="300"></li>
+                    <li class="project-item"><img srcset="./images/img2-2x.jpg 2x" src="./images/img2.jpg"
+                            alt="phonescreen" width="360" height="300">
                     </li>
-                    <li class="project-item"><img src="./images/img3.jpg" alt="mobile app" width="360" height="300">
+                    <li class="project-item"><img srcset="./images/img3-2x.jpg 2x" src="./images/img3.jpg"
+                            alt="mobile app" width="360" height="300">
                     </li>
                 </ul>
             </div>
@@ -200,10 +205,11 @@
 
         <section class="team">
             <div class="container">
-                <h2 class="team-title">Our Team</h2>
+                <h2 class="section-title">Our Team</h2>
                 <ul class="team-list list">
                     <li class="team-item">
-                        <img class="team-item-img" src="./images/mark.jpg" alt="Mark Guerrero" width="264" height="260">
+                        <img class="team-item-img" srcset="./images/mark-2x.jpg 2x" src="./images/mark.jpg"
+                            alt="Mark Guerrero" width="264" height="260">
                         <div class="team-card">
                             <h3 class="teammate">Mark Guerrero</h3>
                             <p class="team-text">Product Designer</p>
@@ -241,7 +247,8 @@
                     </li>
 
                     <li class="team-item">
-                        <img class="team-item-img" src="./images/tom.jpg" alt="Tom Ford" width="264" height="260">
+                        <img class="team-item-img" srcset="./images/tom-2x.jpg 2x" src="./images/tom.jpg" alt="Tom Ford"
+                            width="264" height="260">
                         <div class="team-card">
                             <h3 class="teammate">Tom Ford</h3>
                             <p class="team-text">Frontend Developer</p>
@@ -279,8 +286,8 @@
                     </li>
 
                     <li class="team-item">
-                        <img class="team-item-img" src="./images/camila.jpg" alt="Camila Garcia" width="264"
-                            height="260">
+                        <img class="team-item-img" srcset="./images/camilia-2x.jpg 2x" src="./images/camila.jpg"
+                            alt="Camila Garcia" width="264" height="260">
                         <div class="team-card">
                             <h3 class="teammate">Camila Garcia</h3>
                             <p class="team-text">Marketing</p>
@@ -318,8 +325,8 @@
                     </li>
 
                     <li class="team-item">
-                        <img class="team-item-img" src="./images/daniel.jpg" alt="Daniel Wilson" width="264"
-                            height="260">
+                        <img class="team-item-img" srcset="./images/daniel-2x.jpg 2x" src="./images/daniel.jpg"
+                            alt="Daniel Wilson" width="264" height="260">
                         <div class="team-card">
                             <h3 class="teammate">Daniel Wilson</h3>
                             <p class="team-text">UI Designer</p>
@@ -364,7 +371,7 @@
 
         <section class="customers">
             <div class="container">
-                <h2 class="customers-title">Customers</h2>
+                <h2 class="section-title">Customers</h2>
                 <ul class="customers-list list">
                     <li class="customers-item">
                         <a class="customers-link link" href="" target="_blank" rel="noopener noreferrer">
@@ -437,7 +444,7 @@
                     & growth solutions.</p>
             </div>
             <div class="footer-right-container">
-                <p class="footer-title">Social media</p>
+                <p class="footer-section-title">Social media</p>
                 <ul class="footer-soc-list list">
                     <li class="footer-soc-item">
                         <a class="footer-soc-link link" href="" target="_blank" rel="noopener noreferrer">
@@ -470,7 +477,7 @@
                 </ul>
             </div>
             <div class="footer-form">
-                <p class="footer-form-text">Subscribe</p>
+                <p class="footer-section-title">Subscribe</p>
                 <form class="subscribe-form">
                     <label class="footer-form-field">
                         <input class="footer-input" name="email" minlength="3" pattern="[a-z]" type="email"
